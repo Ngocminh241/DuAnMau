@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_quanlyphieumuon"
+            android:icon="@drawable/icon_home"
+            android:title="Quản lý Phiếu mượn" />
+        <item
+            android:id="@+id/item_quanlyloaisach"
+            android:icon="@drawable/icon_loaisach"
+            android:title="Quản lý Loại Sách" />
+        <item
+            android:id="@+id/item_quanlysach"
+            android:icon="@drawable/icon_sach"
+            android:title="Quản lý Sách" />
+        <item
+            android:id="@+id/item_quanlythanhvien"
+            android:icon="@drawable/qlnhansu"
+            android:title="Quản lý Thành Viên" />
+<!--        <item-->
+<!--            android:id="@+id/item_quanlykho"-->
+<!--            android:icon="@drawable/icon_home"-->
+<!--            android:title="Quản lý kho hàng" />-->
+<!--        <item-->
+<!--            android:id="@+id/item_quanlysanpham"-->
+<!--            android:icon="@drawable/qlsanpham"-->
+<!--            android:title="Quản lý sản phẩm" />-->
+<!--        <item-->
+<!--            android:id="@+id/item_phieuxuatkho"-->
+<!--            android:icon="@drawable/phieuxuatkho"-->
+<!--            android:title="Phiếu nhập - xuất kho" />-->
+    </group>
+    <item android:title="Thống Kê">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/item_xuatkhotheothang"
+                    android:icon="@drawable/thongkexuat"
+                    android:title="10 sách mượn niều nhất" />
+                <item
+                    android:id="@+id/item_tonkhotheothang"
+                    android:icon="@drawable/thongketon"
+                    android:title="Doanh thu" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Người Dùng">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/item_quanlynhansu"
+                    android:icon="@drawable/icon_themnd"
+                    android:title="Thêm người dùng" />
+                <item
+                    android:id="@+id/item_doimatkhau"
+                    android:icon="@drawable/doipw"
+                    android:title="Đổi mật khẩu" />
+                <item
+                    android:id="@+id/item_dangxuat"
+                    android:icon="@drawable/dangxuat"
+                    android:title="Đăng xuất" />
+            </group>
+        </menu>
+    </item>
+</menu>
