@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DBHelper extends SQLiteOpenHelper {
 
     static String DB_NAME = "quanlykhohang";
-    static int DB_VERSION = 3;
+    static int DB_VERSION = 1;
 
     public DBHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -38,9 +38,9 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("Drop table tb_User");
-        db.execSQL("Drop table tb_loaihang");
-        db.execSQL("Drop table tb_SanPham");
-        db.execSQL("Drop table tb_phieuxuat");
-        db.execSQL("Drop table tb_CTPhieuxuat");
+//        db.execSQL("Drop table tb_loaihang");
+//        db.execSQL("Drop table tb_SanPham");
+//        db.execSQL("Drop table tb_phieuxuat");
+//        db.execSQL("Drop table tb_CTPhieuxuat");
     }
 }
