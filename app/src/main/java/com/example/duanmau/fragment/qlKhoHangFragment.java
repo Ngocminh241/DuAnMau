@@ -11,20 +11,20 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.duanmau.Adapter.Adapter_khohang;
-import com.example.duanmau.DAO.DAO_khohang;
-import com.example.duanmau.DTO.DTO_KhoHang;
+//import com.example.duanmau.Adapter.Adapter_khohang;
+//import com.example.duanmau.DAO.DAO_khohang;
+//import com.example.duanmau.DTO.DTO_KhoHang;
 import com.example.duanmau.R;
 
 import java.util.ArrayList;
 
 public class qlKhoHangFragment extends Fragment {
     RecyclerView rcvQLKH;
-    DAO_khohang dao_khohang;
-    Adapter_khohang adapter_khohang;
+//    DAO_khohang dao_khohang;
+//    Adapter_khohang adapter_khohang;
     SearchView searchView;
-    private ArrayList<DTO_KhoHang> list = new ArrayList<>();
-    private ArrayList<DTO_KhoHang> Searchlist;
+//    private ArrayList<DTO_KhoHang> list = new ArrayList<>();
+//    private ArrayList<DTO_KhoHang> Searchlist;
 
     public qlKhoHangFragment() {
         // Required empty public constructor
@@ -36,22 +36,22 @@ public class qlKhoHangFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_ql_kho_hang, container, false);
         rcvQLKH = view.findViewById(R.id.rcv_khohang);
-        dao_khohang = new DAO_khohang(getContext());
-        list = dao_khohang.selectAll();
-        adapter_khohang = new Adapter_khohang(list, getContext());
-        rcvQLKH.setLayoutManager(new LinearLayoutManager(getContext()));
-        rcvQLKH.setAdapter(adapter_khohang);
+//        dao_khohang = new DAO_khohang(getContext());
+//        list = dao_khohang.selectAll();
+//        adapter_khohang = new Adapter_khohang(list, getContext());
+//        rcvQLKH.setLayoutManager(new LinearLayoutManager(getContext()));
+//        rcvQLKH.setAdapter(adapter_khohang);
         searchView = view.findViewById(R.id.SearchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                adapter_khohang.getFilter().filter(query);
+//                adapter_khohang.getFilter().filter(query);
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                adapter_khohang.getFilter().filter(newText);
+//                adapter_khohang.getFilter().filter(newText);
                 return false;
             }
         });

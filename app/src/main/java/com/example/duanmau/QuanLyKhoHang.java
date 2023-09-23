@@ -34,12 +34,12 @@ import androidx.fragment.app.FragmentManager;
 import com.example.duanmau.DAO.DAO_User;
 import com.example.duanmau.DTO.DTO_User;
 import com.example.duanmau.fragment.Frag_load;
-import com.example.duanmau.fragment.Frag_sp_ql;
-import com.example.duanmau.fragment.phieu_xuat_nhap_khoFragment;
+//import com.example.duanmau.fragment.Frag_sp_ql;
+//import com.example.duanmau.fragment.phieu_xuat_nhap_khoFragment;
 import com.example.duanmau.fragment.qlKhoHangFragment;
 import com.example.duanmau.fragment.qlNhanSuFragment;
-import com.example.duanmau.fragment.ton_khoFragment;
-import com.example.duanmau.fragment.xuat_khoFragment;
+//import com.example.duanmau.fragment.ton_khoFragment;
+//import com.example.duanmau.fragment.xuat_khoFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import java.io.ByteArrayOutputStream;
@@ -104,13 +104,13 @@ public class QuanLyKhoHang extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.item_phieuxuatkho) {
                     toolbar.setTitle("Phiếu nhập - xuất kho");
                     fragment = new phieu_xuat_nhap_khoFragment();
-                } else*/  if (item.getItemId() == R.id.item_xuatkhotheothang) {
+                } else  if (item.getItemId() == R.id.item_xuatkhotheothang) {
                     toolbar.setTitle("Thống kê xuất kho");
                     fragment = new xuat_khoFragment();
                 } else if (item.getItemId() == R.id.item_tonkhotheothang) {
                     toolbar.setTitle("Thống kê tồn kho");
                     fragment = new ton_khoFragment();
-                } else if (item.getItemId() == R.id.item_quanlynhansu) {
+                } else */if (item.getItemId() == R.id.item_quanlynhansu) {
                     if (list.get(0).getVaiTro() == 1) {
                         toolbar.setTitle("Quản lý nhân sự");
                         fragment = new qlNhanSuFragment();
